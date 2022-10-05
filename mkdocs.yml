@@ -1,0 +1,45 @@
+site_name: 'Test Driven Development in Practice'
+repo_url: https://github.com/matpiq/PF-TDD
+edit_uri: edit/main/docs/
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+theme:
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# markdown_extensions:
+#   - admonition
+#   - footnotes
+#   - pymdownx.details
+#   - pymdownx.superfences
+#   - pymdownx.inlinehilite
+#   - pymdownx.keys
+#   - pymdownx.snippets
+#   - pymdownx.tabbed
+#   - pymdownx.smartsymbols
+#   - footnotes
+#   - attr_list
+#   - def_list
+#   - meta
+#   - pymdownx.caret
+#   - pymdownx.mark
+#   - pymdownx.tilde
+#   - pymdownx.highlight:
+#       use_pygments: true
+#   - pymdownx.tasklist:
+#       custom_checkbox: true
+#   - pymdownx.arithmatex:
+#       generic: true
+#   - pymdownx.emoji:
+#       emoji_index: !!python/name:materialx.emoji.twemoji
+#       emoji_generator: !!python/name:materialx.emoji.to_svg
