@@ -13,7 +13,9 @@ nav:
 theme:
   features:
     - navigation.tabs
-    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.instant
+    #- navigation.tabs.sticky
   palette: 
     # Palette toggle for light mode
     - scheme: default
@@ -40,11 +42,12 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
 
 
 extra_javascript:
