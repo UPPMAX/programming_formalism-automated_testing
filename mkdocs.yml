@@ -1,10 +1,19 @@
 site_name: 'Test Driven Development in Practice'
 repo_url: https://github.com/matpiq/PF-TDD
 edit_uri: edit/main/docs/
+
 nav:
-  - Home: index.md
-  - Introduction: introduction.md
+  - Course Overview: index.md
+  - Testing with Python: testing_python.md
+  - Automated testing using Github actions: testing_github.md
+  - Putting it all together: testing_workflow.md
+  - Exercises: exercises.md
+  - Advanced Topics: testing_advanced.md
+
 theme:
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
   palette: 
     # Palette toggle for light mode
     - scheme: default
@@ -17,31 +26,29 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   name: material
-    
 
-# markdown_extensions:
-#   - admonition
-#   - footnotes
-#   - pymdownx.details
-#   - pymdownx.superfences
-#   - pymdownx.inlinehilite
-#   - pymdownx.keys
-#   - pymdownx.snippets
-#   - pymdownx.tabbed
-#   - pymdownx.smartsymbols
-#   - footnotes
-#   - attr_list
-#   - def_list
-#   - meta
-#   - pymdownx.caret
-#   - pymdownx.mark
-#   - pymdownx.tilde
-#   - pymdownx.highlight:
-#       use_pygments: true
-#   - pymdownx.tasklist:
-#       custom_checkbox: true
-#   - pymdownx.arithmatex:
-#       generic: true
-#   - pymdownx.emoji:
-#       emoji_index: !!python/name:materialx.emoji.twemoji
-#       emoji_generator: !!python/name:materialx.emoji.to_svg
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+
+extra_javascript:
+  # Mathjax support
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
