@@ -1,18 +1,23 @@
-site_name: 'Test Driven Development in Practice'
+site_name: 'Automated testing with Github Actions'
 repo_url: https://github.com/matpiq/PF-TDD
 edit_uri: edit/main/docs/
 
 nav:
-  - Course Overview: index.md
-  - Testing with Python: testing_python.md
-  - Automated testing using Github actions: testing_github.md
-  - Putting it all together: testing_workflow.md
-  - Exercises: exercises.md
-  - Advanced Topics: testing_advanced.md
+  - Continous integration: intro.md
+  - Introduction to Github Actions: gh-actions.md
+  - Continuous (py)Testing: pytest.md
+  - Exercise: exercise.md
+  - Typechecking, linting and formatting: linting-formatting.md
+  #- Course Overview: index.md
+  #- Testing with Python: testing_python.md
+  # - Automated testing using Github actions: testing_github.md
+  # - Putting it all together: testing_workflow.md
+  # - Exercises: exercises.md
+  # - Advanced Topics: testing_advanced.md
 
 theme:
   features:
-    - navigation.tabs
+  #   - navigation.tabs
     - navigation.expand
     - navigation.instant
     #- navigation.tabs.sticky
@@ -44,8 +49,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.tabbed:
-      alternate_style: true
   - admonition
   - pymdownx.details
 
