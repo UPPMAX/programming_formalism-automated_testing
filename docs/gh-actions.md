@@ -2,7 +2,12 @@
 
 Github actions lets you automate the process of testing (and much more). 
 
-!!! 
+!!! info "Some common use cases"
+    * Testing
+    * Building and deployment
+    * Code quality e.g. linting and formatting
+    * Generating websites/documentation (this webpage)
+    * Code scanning (security vulnerabilities)
 
 
 ## A first look
@@ -104,14 +109,5 @@ the repository on Github to inspect our workflow.
 
 
 
-!!! info "Examples from the wild"
-    * [numpy](https://numpy.org/devdocs/dev/index.html): Various continuous
-      integration (CI) services are triggered after each PR update to build the
-      code, run unit tests, measure code coverage and check coding style of
-      your branch. The CI tests must pass before your PR can be merged. If CI
-      fails, you can find out why by clicking on the “failed” icon (red cross)
-      and inspecting the build and test log. To avoid overuse and waste of this
-      resource, test your work locally before committing.
-    * [scikit-learn]()
 
 
