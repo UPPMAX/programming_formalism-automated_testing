@@ -28,7 +28,14 @@ like formatting, linting and type checking.
 To follow the code-along and complete the exercises you should have the
 following things prepared before the class:
 
-* A [Github](https://github.com/) account that is setup so you can push changes
-  to a remote repository 
+
 * Git
-* Python with the course Conda environment. 
+* Github: It must be configured so that you can push to a remote repository.
+  Revisit the install instructions if needed:
+  https://github.com/UPPMAX/programming_formalism/blob/main/setup.mdLinks to an
+  external site.
+* Miniconda (Optional): We will be using Python and the package pytest, black,
+  flake8 and pylint all of which can be installed in a conda environment.
+  However, everything we do will be run by a virtual machine through Github
+  actions so you only need this if you want to also test things locally.
+
