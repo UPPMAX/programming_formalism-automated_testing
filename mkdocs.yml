@@ -1,5 +1,5 @@
 site_name: 'Automated testing with Github Actions'
-repo_url: https://github.com/matpiq/PF-TDD
+repo_url: https://github.com/UPPMAX/programming_formalism-automated_testing
 edit_uri: edit/main/docs/
 
 nav:
