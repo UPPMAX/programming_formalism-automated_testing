@@ -14,7 +14,7 @@ automatically run the tests for us.
     Julia, R` and `C++`. 
 
 
-!!! tip "What we will be doing"
+!!! question "What we will be doing"
     - A: Create a repository on GitHub
     - B: Commit Per's test example (The tests will not pass at this point)
     - C: Open an issue and report the bug
