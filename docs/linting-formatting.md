@@ -246,3 +246,11 @@ Or if we want to directly perform the refactoring in-place
 ``` bash 
 sourcery review --in-place refactoring.py
 ```
+
+!!! tip "Where to go from here"
+    If you are interested in learning more tools and ways to improve the
+    quality of your project, a really good place to start is looking at
+    cookicutter templates. Two great ones for `Python` are:
+
+    * <https://cookiecutter-hypermodern-python.readthedocs.io/en/2022.6.3.post1/>
+    * <https://scikit-hep.org/developer>
