@@ -91,16 +91,16 @@ could use.
     from data_structures import Stack
 
 
-    def test_linked_list():
+    def test_stack():
 
-        linked_list = LinkedList()
+        stack = Stack()
         teachers = ("Matias", "Björn", "Lars", "Jon", "Marcus", "Per")
 
         for teacher in teachers:
 
-            linked_list.push(teacher)
+            stack.push(teacher)
 
-        assert linked_list.pop() == "Per"
+        assert stack.pop() == "Per"
     ```
 
 ??? example "Dijkstra's two-stack algorithm" 
