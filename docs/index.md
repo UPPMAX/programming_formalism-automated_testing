@@ -6,7 +6,7 @@ like formatting, linting and type checking.
 
 ## Learning Outcomes
 
-* Understand the value of continuous development (CI)
+* Understand the value of continuous integration (CI)
 * Practical experience about how Github actions can be used to automate
   testing
 * Understand how code quality can be improved by automating type checking,
