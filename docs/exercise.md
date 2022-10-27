@@ -36,16 +36,16 @@ If you want you can use the `reverse_string.py` code from before or you can
 write your own program. Below I have also included two other examples that you
 could use.
 
-??? example "Linked list implementation" 
+??? example "Stack implementation" 
     
-    In this example we will implement the linked list data-structure that you
-    learned about on Tuesday during Marcus lecture.
+    In this example we will implement the Stack data-structure that you learned
+    about on Tuesday during Marcus lecture. We will do so using a linked list.
 
-    ```python title="linked_list.py" linenums="1"
+    ```python title="data_structures.py" linenums="1"
     class Node:
         """
-        A node stores the item of the element in the list as well as keeps a
-        pointer to the next node.
+        A node stores the item of the element in the linked-list as well as
+        keeps a pointer to the next node.
         """
 
         def __init__(self, item, next):
@@ -53,12 +53,19 @@ could use.
             self.next = next
 
 
-    class LinkedList:
+    class Stack:
+        """
+        Stack implemented using linked list.
+        Last in first out (LIFO).
+        """
         def __init__(self, head=None):
 
-            self.head = head
+            self.head = head # Pointer to first (last inserted) element
 
         def pop(self):
+            """
+            Removes and returns the last added element
+            """
 
             if not self.head:
                 raise ValueError("List is empty")
@@ -71,14 +78,17 @@ could use.
             return item
 
         def push(self, new_item):
+            """
+            Push new item to stack
+            """
 
             self.head = Node(item=new_item, next=self.head)
 
     ```
     And the test. Run it to see what is going wrong!
 
-    ``` python title="test_linked_list.py" linenums="1"
-    from linked_list import LinkedList
+    ``` python title="test_stack.py" linenums="1"
+    from data_structures import Stack
 
 
     def test_linked_list():
@@ -105,13 +115,17 @@ could use.
     and Advent of code had a question on day 18 of 2020 which could be solved with
     this algorithm: <https://adventofcode.com/2020/day/18>.
 
-    ``` python title="dijkstra_two_stack.py" linenums="1"
+    ``` python title="algorithms.py" linenums="1"
     def dijkstra_two_stack(math_expr: str):
+        """
+        Evaluates parenthesised mathematical expression 
+        """
 
         operator_stack = []
         value_stack = []
         accepted_operators = "+-*"
-
+        
+        # Loop over chars in expression
         for c in math_expr.strip():
 
             if c in accepted_operators:
@@ -130,11 +144,11 @@ could use.
 
                     val += value_stack.pop()
 
-                if operator == "-":
+                elif operator == "-":
 
                     val -= value_stack.pop()
 
-                if operator == "*":
+                elif operator == "*":
                     
                     # FIXME: This should be multiplication!
                     val /= value_stack.pop()
@@ -147,6 +161,8 @@ could use.
     and the test!
 
     ``` python title="test_dijkstra_two_stack.py" linenums="1"
+    from algorithms import dijkstra_two_stack
+
     def test_dijsktra_two_stack():
 
         expression_1 = "( ( 1 + 2 ) * 3 )"
